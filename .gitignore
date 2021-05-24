@@ -29,7 +29,3 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
-
-# auto generated files
-package-lock.json
-yarn.lock
