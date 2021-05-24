@@ -18,11 +18,19 @@ export const Footer: FC = () => (
     <p>
       Powered by{' '}
       <a
-        href='https://github.com/lolPants/statty'
+        href='https://github.com/djsime1/statty'
         target='_blank'
         rel='noopener noreferrer'
       >
         Statty
+      </a>
+      {' '}& Running on{' '}
+      <a
+        href='https://railway.app'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        Railway
       </a>
     </p>
   </footer>
