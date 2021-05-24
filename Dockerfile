@@ -23,12 +23,16 @@ WORKDIR /app
 ENV NODE_ENV production
 ENV NEXT_TELEMETRY_DISABLED=1
 ARG REDIS_URL
+ARG PORT
+ARG CONFIG_PATH=./config.json
 
 COPY --from=builder /app/next.config.js ./
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
+COPY --from=builder /app/config.json ./config.json
+COPY --from=builder /app/assets/config.schema.json ./assets/config.schema.json
 
 RUN apk add --no-cache iputils tini
 
@@ -37,6 +41,6 @@ RUN adduser -S nextjs -u 1001
 RUN chown -R nextjs:nodejs /app/.next
 USER nextjs
 
-EXPOSE 3000
+EXPOSE ${PORT}
 ENTRYPOINT ["/sbin/tini", "--"]
 CMD ["yarn", "run", "start"]
