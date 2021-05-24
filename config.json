@@ -14,12 +14,44 @@
     },
     "services": [
         {
+            "id": "Server",
+            "plugin": "ping",
+            "target": "207.244.232.210",
+            "description": "The actual VPS",
+            "latencyLimit": 100,
+            "sendAlerts": true
+        },
+        {
+            "id": "Traefik",
+            "plugin": "http",
+            "target": "https://vps.dj.je/ping",
+            "description": "VERY IMPORTANT reverse proxy",
+            "latencyLimit": 100,
+            "sendAlerts": true
+        },
+        {
+            "id": "OpenLiteSpeed",
+            "plugin": "http",
+            "target": "https://dj.je",
+            "description": "Primary webserver",
+            "latencyLimit": 200,
+            "sendAlerts": true
+        },
+        {
             "id": "Nextcloud",
             "plugin": "http",
             "target": "https://nc.dj.je/status.php",
-            "description": "Nextcloud instance on nc.dj.je",
-            "latencyLimit": 1000,
+            "description": "Nextcloud instance @ nc.dj.je",
+            "latencyLimit": 500,
             "sendAlerts": true
-          }
+        },
+        {
+            "id": "Shlink",
+            "plugin": "http",
+            "target": "https://url.dj.je/rest/health",
+            "description": "URL shortener",
+            "latencyLimit": 200,
+            "sendAlerts": true
+        }
       ]
 }
