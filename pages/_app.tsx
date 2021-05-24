@@ -6,6 +6,7 @@ import {
   faTimesCircle,
 } from '@fortawesome/free-solid-svg-icons'
 import { showAd } from 'lib/ad'
+import { ThemeProvider } from 'next-themes'
 import { AppProps } from 'next/app'
 
 import '@fortawesome/fontawesome-svg-core/styles.css'
@@ -27,11 +28,14 @@ const NextApp = ({ Component, pageProps }: AppProps) => (
         body
           margin 0
           padding 2rem
+          padding-bottom 0
           font 16px/1.5 system-ui, sans-serif
       `}
     </style>
 
-    <Component {...pageProps} />
+    <ThemeProvider attribute='class'>
+      <Component {...pageProps} />
+    </ThemeProvider>
   </>
 )
 
