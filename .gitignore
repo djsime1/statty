@@ -29,10 +29,6 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 
-# config files
-config.yml
-config.yaml
-config.json
-
+# auto generated files
 package-lock.json
 yarn.lock

@@ -1,0 +1,25 @@
+{
+    "$schema": "https://raw.githubusercontent.com/lolPants/statty/master/assets/config.schema.json",
+    "instance": {
+        "name": "dj.je Status",
+        "canonicalURL": "https://status.dj.je",
+        "crontab": "* * * * *",
+        "evictTime": "1h",
+        "delayFactor": 90,
+        "alerts": {
+            "webhooks": [
+                "https://example.com"
+              ]
+        }
+    },
+    "services": [
+        {
+            "id": "Nextcloud",
+            "plugin": "http",
+            "target": "https://nc.dj.je/status.php",
+            "description": "Nextcloud instance on nc.dj.je",
+            "latencyLimit": 1000,
+            "sendAlerts": true
+          }
+      ]
+}
