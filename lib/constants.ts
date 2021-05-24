@@ -1,7 +1,36 @@
-// Status Colours
-export const COLOUR_GREEN = '#b3ffb3'
-export const COLOUR_ORANGE = '#ffdfb3'
-export const COLOUR_RED = '#ffb3b3'
+export const NOTICE_COLOURS = Object.freeze({
+  red: {
+    light: '#ffb3b3',
+    dark: '#f79898',
+  },
+  orange: {
+    light: '#ffdfb3',
+    dark: '#ffcc85',
+  },
+  green: {
+    light: '#b3ffb3',
+    dark: '#8aec8a',
+  },
+})
+
+export const ICON_COLOURS = Object.freeze({
+  red: {
+    light: '#ff4136',
+    dark: '',
+  },
+  orange: {
+    light: '#ff851b',
+    dark: '',
+  },
+  green: {
+    light: '#33de46',
+    dark: '',
+  },
+  grey: {
+    light: '#888',
+    dark: '',
+  },
+})
 
 // Status Descriptions
 export const STATUS_OPERATIONAL = 'All systems operational'
