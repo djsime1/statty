@@ -33,3 +33,6 @@ yarn-error.log*
 config.yml
 config.yaml
 config.json
+
+package-lock.json
+yarn.lock
