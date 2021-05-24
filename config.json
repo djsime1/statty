@@ -5,7 +5,7 @@
         "canonicalURL": "https://status.dj.je",
         "crontab": "* * * * *",
         "evictTime": "12h",
-        "delayFactor": 90,
+        "delayFactor": -1,
         "alerts": {
             "webhooks": [
                 "https://example.com"
