@@ -20,7 +20,7 @@ const App: NextPage<Props> = ({ siteName, initialData }) => {
     <>
       <style jsx>{`
         .page
-          max-width 40em
+          max-width 80%
           margin 0 auto
 
           & h1:first-child

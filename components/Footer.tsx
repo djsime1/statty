@@ -4,13 +4,13 @@ export const Footer: FC = () => (
   <footer>
     <style jsx>{`
       footer
-        margin 0.8rem
+        margin 1rem
         margin-top 1.75rem
 
         & p
           opacity 0.75
           margin 0
-          font-size 0.75rem
+          font-size 1rem
           text-align center
           font-weight 500
     `}</style>

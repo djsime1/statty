@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/lolPants/statty/master/assets/config.schema.json",
     "instance": {
-        "name": "dj.je Status",
+        "name": "dj.je Services Monitor",
         "canonicalURL": "https://status.dj.je",
         "crontab": "* * * * *",
         "evictTime": "12h",
@@ -30,7 +30,7 @@
             "sendAlerts": true
         },
         {
-            "id": "OpenLiteSpeed",
+            "id": "Nginx",
             "plugin": "http",
             "target": "https://dj.je",
             "description": "Primary webserver",
