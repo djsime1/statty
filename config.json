@@ -8,7 +8,7 @@
         "delayFactor": -1,
         "alerts": {
             "webhooks": [
-                "UBER_SECRET_WEBHOOK_URL",
+                "UBER_SECRET_WEBHOOK_URL"
             ],
             "healthyCount": 1,
             "unhealthyCount": 1
