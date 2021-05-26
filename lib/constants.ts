@@ -36,4 +36,4 @@ export const ICON_COLOURS = Object.freeze({
 export const STATUS_OPERATIONAL = 'All services operational 👍'
 export const STATUS_DEGRADED = 'Some services are degraded 🤔'
 export const STATUS_OUTAGES = 'Some services are experiencing outages 😳'
-export const STATUS_UNKNOWN = 'We are having trouble reaching some services ☠'
+export const STATUS_UNKNOWN = 'We are having trouble reaching some services 💀'

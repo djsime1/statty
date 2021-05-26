@@ -3,13 +3,15 @@
     "instance": {
         "name": "dj.je Services Monitor",
         "canonicalURL": "https://status.dj.je",
-        "crontab": "* * * * *",
-        "evictTime": "12h",
+        "crontab": "*/5 * * * *",
+        "evictTime": "24h",
         "delayFactor": -1,
         "alerts": {
             "webhooks": [
-                "https://example.com"
-              ]
+                "UBER_SECRET_WEBHOOK_URL",
+            ],
+            "healthyCount": 1,
+            "unhealthyCount": 1
         }
     },
     "services": [

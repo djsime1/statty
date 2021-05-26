@@ -5,7 +5,7 @@
 ## 🚄 All aboard!
 [Railway](https://railway.app/) is a platform for quickly deploying services, akin to Heroku. The difference being it has a generous free tier with blazing fast response times. I decided it would be better to drop a status monitor here instead of a Raspberry Pi. To get your own deployment, click on this magical button!
 
-👉 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Fdjsime1%2Fstatty%2Ftree%2Fmaster&plugins=redis) 👈
+👉 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Fdjsime1%2Fstatty%2Ftree%2Fmaster&plugins=redis&envs=WEBHOOK&optionalEnvs=WEBHOOK&WEBHOOKDesc=Slack-compatible+webook%2C+replaces+UBER_SECRET_WEBHOOK_URL+in+config.json.&WEBHOOKDefault=https%3A%2F%2Fexample.com) 👈
 
 Once copied, edit the `config.json` to your liking and commit the changes. Railway will automatically rebuild and update the deployment. You can follow my configuration as an example, which is live at [https://status.dj.je](https://status.dj.je).
 
